@@ -11,6 +11,7 @@ int main() {
     int pontosTuristicos1;
     float densidadepopulacional1;
     float pibpercapto1;
+    double superpoder1;
 
     
     char estado2;
@@ -22,6 +23,8 @@ int main() {
     int pontosTuristicos2;
     float densidadepopulacional2;
     float pibpercapto2;
+    double superpoder2;
+
 
     
 
@@ -78,6 +81,9 @@ densidadepopulacional1 = populacao1 / area1;
 pibpercapto2 = pib2 / populacao2;
 densidadepopulacional2 = populacao2 / area2;
 
+superpoder1 = (double)pontosTuristicos1 + (double)populacao1 + (double)pib1 + (double)pibpercapto1 + (double)area1 + (double)densidadepopulacional1 / 1;
+superpoder2 = (double)pontosTuristicos2 + (double)populacao2 + (double)pib2 + (double)pibpercapto2 + (double)area2 + (double)densidadepopulacional2 / 1;
+
 
     printf("\nCarta 1:\n");
 printf("Estado: %c\n", estado1);
@@ -89,6 +95,7 @@ printf("PIB: %.2f bilhões de reais\n", pib1);
 printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
 printf("A densidade poluacional e: %.2f\n", densidadepopulacional1);
 printf("o pib percapto e: %.2f\n", pibpercapto1);
+printf("o super poder é: %.2f\n", superpoder1);
 
 printf("\nCarta 2:\n");
 printf("Estado: %c\n", estado2);
@@ -100,7 +107,9 @@ printf("PIB: %.2f bilhões de reais\n", pib2);
 printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
 printf("A densidade poluacional e: %.2f\n", densidadepopulacional2);
 printf("o pib percapto e: %.2f\n", pibpercapto2);
+printf("o super poder é: %.2f\n", superpoder2);
 
+printf("A carta vencedora é: %d\n", superpoder1 > superpoder2);
 
 
     return 0;
